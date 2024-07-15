@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import Experience from '../components/icons/Experience.astro';
+import SectionContainer from '../components/icons/SectionContainer.astro';
+import Briefcase from '../components/icons/Briefcase.astro';
+---
+
+<Layout 
+	title="Portafolio de Lillys - Desarrolladora y Programadora Web"
+	description="Contrátame para crear tu aplicación web o móvil. Desarrolladora Web, especializada en crear aplicaciones únicas." >
+	<main>
+		<SectionContainer class="py-44 pb-24">
+			<h1 class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10">
+				Hey, soy Lillys
+				<a 
+					href="https://www.linkedin.com/in/lillyshr/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+				>
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+			</h1>
+			<h2 class="text-white text-2xl opacity-80 text-wrap">
+				<span>+4 años de experiencia.</span> <span class="text-yellow-200/90">Desarrollador Web principalmente del lado del FrontEnd y en vías de aprender desarrollo BackEnd.</span>
+				<span class="text-red-200/90">Soy de Veracruz, México.</span> <span class="opacity-75">Especializada en crear aplicaciones únicas.</span>
+			</h2>
+
+			
+			<nav class="*flex gap-x-4 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/lillyshr/">
+					<LinkedInIcon class="size-6" />
+					LinkedIn	
+				</SocialPill>
+				<SocialPill href="https://github.com/LOLA-1980">
+					<GitHubIcon class="size-6" />
+					Github
+				</SocialPill>
+				<SocialPill href="https://github.com/LOLA-1980">
+					<MailIcon class="size-6" />
+					lillys.hernandez.ramos@gmail.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-2xl font-semibold m-10 text-white mb-7 flex gap-x-4 items-center">
+				<Briefcase class="size-6" />
+				Experiencia Laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+	</main>
+</Layout>
+
