@@ -15,6 +15,7 @@
     "@fontsource-variable/onest": "^5.0.3",
     "astro": "^4.4.6",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vercel": "^35.0.3"
   }
 }
