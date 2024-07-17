@@ -1,0 +1,50 @@
+---
+const personalImageAlt = "Lillys Hernández Ramos";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import HeartIcon from "@/components/icons/Heart.astro";
+import PawIcon from "@/components/icons/Paw.astro";
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/LILLYS2.jpeg"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://github.com/LOLA-1980"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Lillys
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +4 años de experiencia. <strong
+      >Ingeniera de Software y Petlover</strong><HeartIcon class="inline w-5 h-5 ml-1" /><PawIcon class="inline w-5 h-5 ml-1" />
+       de Veracruz, México 🇪🇸. Especializada en el desarrollo de aplicaciones web
+    únicas.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:lillys.hernandez.ramos@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/lillyshr">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
